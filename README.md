@@ -2,6 +2,12 @@
 
 Helm charts used by/for Kimball applications
 
+## Add this repository
+
+```
+helm repo add getkimball https://getkimball.github.io/charts/stable
+```
+
 ## Packaging new charts
 
 ```
