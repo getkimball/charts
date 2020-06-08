@@ -2,12 +2,21 @@ apiVersion: v1
 entries:
   kimball-api:
   - apiVersion: v2
-    created: "2020-06-08T09:27:57.963258-04:00"
+    created: "2020-06-08T10:08:31.996925-04:00"
+    description: Kimball API
+    digest: 5176fc74d7db373d243f54f6442ff7b0d2c8d93b9969d254fdd5919474ef4080
+    name: kimball-api
+    type: application
+    urls:
+    - https://getkimball.github.com/charts/stable/kimball-api-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    created: "2020-06-08T10:08:31.996549-04:00"
     description: A Helm chart for Kubernetes
     digest: dbdb49338525c87f35efdccf26ee882041f445dff8ef5d75879faf06f893eaf8
     name: kimball-api
     type: application
     urls:
-    - https://getkimball.github.com/charts/kimball-api-0.1.0.tgz
+    - https://getkimball.github.com/charts/stable/kimball-api-0.1.0.tgz
     version: 0.1.0
-generated: "2020-06-08T09:27:57.962756-04:00"
+generated: "2020-06-08T10:08:31.995622-04:00"
