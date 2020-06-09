@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ include "kimball-api.fullname" . }}
+  namespace: {{ .Release.Namespace }}
   labels:
     {{- include "kimball-api.labels" . | nindent 4 }}
 spec:
@@ -44,11 +45,13 @@ spec:
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           env:
+          {{- if .Values.kimball.sentry_dsn }}
           - name: "SENTRY_DSN"
             valueFrom:
               secretKeyRef:
-                name: features
+                name: {{ include "kimball-api.fullname" . }}
                 key: sentry_dsn
+          {{- end }}
           - name: "ADDITIONAL_NAMESPACES"
             value: {{ .Release.Namespace }}
           - name: "FEATURES_MODE"
