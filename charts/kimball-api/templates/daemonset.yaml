@@ -47,11 +47,13 @@ spec:
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           env:
+          {{- if .Values.kimball.sentry_dsn }}
           - name: "SENTRY_DSN"
             valueFrom:
               secretKeyRef:
-                name: features
+                name: {{ include "kimball-api.fullname" . }}
                 key: sentry_dsn
+          {{- end }}
           - name: "FEATURES_MODE"
             value: sidecar
           volumeMounts:
