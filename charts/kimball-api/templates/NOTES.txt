@@ -29,5 +29,5 @@ Add to your application pod containers:
           fieldPath: status.podIP
 
     - name: KIMBALL_API_PORT
-      value: {{ .Values.kimball.daemonsetPort }}
+      value: "{{ .Values.kimball.daemonsetPort }}"
 {{- end -}}
