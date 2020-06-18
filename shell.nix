@@ -20,6 +20,10 @@ let
 in stdenv.mkDerivation {
   name = "env";
   buildInputs = [
+                  pinned_pkgs.aws-iam-authenticator
+                  pinned_pkgs.awscli
+                  pinned_pkgs.kubectl
+                  pinned_pkgs.kubectx
                   pinned_pkgs.kubernetes-helm
                 ];
 }
