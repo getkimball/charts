@@ -18,7 +18,7 @@ git checkout -b [CHART]-[VERSION]
 # Git stage your changes
 
 helm package charts/[CHART]
-mv [CHART]-[VERSION].tgz stable
+mv *.tgz stable
 helm repo index stable --url https://getkimball.github.io/charts/stable
 git add -p stable
 git add stable/*.tgz
