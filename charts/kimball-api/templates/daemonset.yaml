@@ -54,6 +54,8 @@ spec:
                 name: {{ include "kimball-api.fullname" . }}
                 key: sentry_dsn
           {{- end }}
+          - name: "ANALYTICS_HOST"
+            value: {{ include "kimball-api.fullname" . }}
           - name: "FEATURES_MODE"
             value: sidecar
           - name: LOG_LEVEL
