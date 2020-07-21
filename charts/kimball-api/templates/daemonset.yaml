@@ -61,8 +61,8 @@ spec:
           - name: LOG_LEVEL
             value: {{ .Values.kimball.logLevel }}
           volumeMounts:
-          - name: features-data
-            mountPath: /features
+          - name: features-store
+            mountPath: /features/data
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
