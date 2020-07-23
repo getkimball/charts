@@ -60,6 +60,8 @@ spec:
             value: sidecar
           - name: LOG_LEVEL
             value: {{ .Values.kimball.logLevel }}
+          - name: S3_BUCKET
+            value: {{ .Values.kimball.s3_bucket }}
           volumeMounts:
           - name: features-data
             mountPath: /features
