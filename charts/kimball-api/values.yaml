@@ -57,4 +57,4 @@ kimball:
   daemonsetPort: 7232
   sentry_dsn: ""
   logLevel: info
-  s3_bucket: "Add your bucket"
+  s3_bucket: ""
