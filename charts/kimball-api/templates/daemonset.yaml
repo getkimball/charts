@@ -45,7 +45,7 @@ spec:
               path: /alive
               port: http
           resources:
-            {{- toYaml .Values.resources | nindent 12 }}
+            {{- toYaml .Values.daemonSetResources | nindent 12 }}
           env:
           {{- if .Values.kimball.sentry_dsn }}
           - name: "SENTRY_DSN"

@@ -37,9 +37,17 @@ service:
   type: ClusterIP
   port: 80
 
-resources:
+deploymentResources:
   limits:
     cpu: 2000m
+    memory: 1024Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+daemonSetResources:
+  limits:
+    cpu: 1000m
     memory: 256Mi
   requests:
     cpu: 100m
