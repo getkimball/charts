@@ -60,7 +60,6 @@ tolerations: []
 affinity: {}
 
 kimball:
-  mode: "api"
   enableDaemonset: true
   daemonsetPort: 7232
   sentry_dsn: ""

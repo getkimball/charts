@@ -55,7 +55,7 @@ spec:
           - name: "ADDITIONAL_NAMESPACES"
             value: {{ .Release.Namespace }}
           - name: "FEATURES_MODE"
-            value: {{ .Values.kimball.mode }}
+            value: "api"
           - name: LOG_LEVEL
             value: {{ .Values.kimball.logLevel }}
           - name: NAMESPACE
