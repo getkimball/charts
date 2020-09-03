@@ -62,7 +62,18 @@ affinity: {}
 kimball:
   enableDaemonset: true
   daemonsetPort: 7232
+
+  # A Sentry DSN for error collection.
   sentry_dsn: ""
+
   logLevel: info
   s3_bucket: ""
+
+  secret:
+    # Name of the secret to use for specifying additional application secrets
+    name: ""
+
+  # What GCS bucket to use for storage. Setting this will also require setting
+  # `secret.name` and a `service_account.json` file to be included in the
+  # secret
   gcs_bucket: ""

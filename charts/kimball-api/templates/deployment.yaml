@@ -30,20 +30,25 @@ spec:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+
           ports:
             - name: http
               containerPort: 8080
               protocol: TCP
+
           livenessProbe:
             httpGet:
               path: /alive
               port: http
+
           readinessProbe:
             httpGet:
               path: /alive
               port: http
+
           resources:
             {{- toYaml .Values.deploymentResources | nindent 12 }}
+
           env:
           {{- if .Values.kimball.sentry_dsn }}
           - name: SENTRY_DSN
@@ -64,6 +69,26 @@ spec:
                 fieldPath: metadata.namespace
           - name: S3_BUCKET
             value: {{ .Values.kimball.s3_bucket }}
+
+          - name: GCS_BUCKET
+            value: {{ .Values.kimball.gcs_bucket }}
+          - name: GOOGLE_APPLICATION_CREDENTIALS
+            value: /secrets/service_account.json
+
+          {{- if .Values.secret.name }}
+          volumeMounts:
+          - name: secrets
+            mountPath: "/secrets"
+            readOnly: true
+          {{- end  }}
+
+      {{- if .Values.secret.name }}
+      volumes:
+      - name: secrets
+        secret:
+          secretName: {{ .Values.secret.name }}
+      {{- end  }}
+
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
