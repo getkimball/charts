@@ -65,3 +65,4 @@ kimball:
   sentry_dsn: ""
   logLevel: info
   s3_bucket: ""
+  gcs_bucket: ""
