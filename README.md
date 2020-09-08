@@ -20,8 +20,7 @@ git checkout -b [CHART]-[VERSION]
 helm package charts/[CHART]
 mv *.tgz stable
 helm repo index stable --url https://getkimball.github.io/charts/stable
-git add -p stable
-git add stable/*.tgz
+git add stable
 git commit
 git push origin [CHART]-[VERSION]
 ```

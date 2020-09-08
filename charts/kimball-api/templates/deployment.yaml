@@ -75,18 +75,23 @@ spec:
           - name: GOOGLE_APPLICATION_CREDENTIALS
             value: /secrets/service_account.json
 
-          {{- if .Values.secret.name }}
+          {{- if .Values.kimball.storage_path_prefix }}
+          - name: STORAGE_PATH_PREFIX
+            value: {{ .Values.kimball.storage_path_prefix }}
+          {{- end  }}
+
+          {{- if .Values.kimball.secret.name }}
           volumeMounts:
           - name: secrets
             mountPath: "/secrets"
             readOnly: true
           {{- end  }}
 
-      {{- if .Values.secret.name }}
+      {{- if .Values.kimball.secret.name }}
       volumes:
       - name: secrets
         secret:
-          secretName: {{ .Values.secret.name }}
+          secretName: {{ .Values.kimball.secret.name }}
       {{- end  }}
 
       {{- with .Values.nodeSelector }}
