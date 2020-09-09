@@ -2,7 +2,16 @@ apiVersion: v1
 entries:
   kimball-api:
   - apiVersion: v2
-    created: "2020-09-08T09:19:48.727317-04:00"
+    created: "2020-09-09T10:33:45.059254-04:00"
+    description: Kimball API
+    digest: 906217c55e4619fd257e6353a197f85be0e55add520b50a2100efeed65f21981
+    name: kimball-api
+    type: application
+    urls:
+    - https://getkimball.github.io/charts/stable/kimball-api-0.1.13.tgz
+    version: 0.1.13
+  - apiVersion: v2
+    created: "2020-09-09T10:33:45.058838-04:00"
     description: Kimball API
     digest: 3194b9a8f7d7080a04487d2008d43dcd218802f19b3f089f98e818767ca77371
     name: kimball-api
@@ -11,7 +20,7 @@ entries:
     - https://getkimball.github.io/charts/stable/kimball-api-0.1.12.tgz
     version: 0.1.12
   - apiVersion: v2
-    created: "2020-09-08T09:19:48.726873-04:00"
+    created: "2020-09-09T10:33:45.058423-04:00"
     description: Kimball API
     digest: 706329059a7550a0a635cd537f22d52a27440e19e713e7fe0148cf63acf19dfd
     name: kimball-api
@@ -20,7 +29,7 @@ entries:
     - https://getkimball.github.io/charts/stable/kimball-api-0.1.11.tgz
     version: 0.1.11
   - apiVersion: v2
-    created: "2020-09-08T09:19:48.726255-04:00"
+    created: "2020-09-09T10:33:45.057979-04:00"
     description: Kimball API
     digest: b58c592e467745f0eb0ab9477bb2315e3f4aa8c1aae59e039672b75adf584de2
     name: kimball-api
@@ -29,7 +38,7 @@ entries:
     - https://getkimball.github.io/charts/stable/kimball-api-0.1.10.tgz
     version: 0.1.10
   - apiVersion: v2
-    created: "2020-09-08T09:19:48.731736-04:00"
+    created: "2020-09-09T10:33:45.062333-04:00"
     description: Kimball API
     digest: b91f1952b16c51dd756b00fbd75694990bdbbce4b8752e8b88492ff30667596c
     name: kimball-api
@@ -38,7 +47,7 @@ entries:
     - https://getkimball.github.io/charts/stable/kimball-api-0.1.9.tgz
     version: 0.1.9
   - apiVersion: v2
-    created: "2020-09-08T09:19:48.731156-04:00"
+    created: "2020-09-09T10:33:45.061955-04:00"
     description: Kimball API
     digest: a2aad78dedaf4264c80cb13bd39905a04b65156cdcc950bd8f6a4df804c8f95c
     name: kimball-api
@@ -47,7 +56,7 @@ entries:
     - https://getkimball.github.io/charts/stable/kimball-api-0.1.8.tgz
     version: 0.1.8
   - apiVersion: v2
-    created: "2020-09-08T09:19:48.730603-04:00"
+    created: "2020-09-09T10:33:45.061584-04:00"
     description: Kimball API
     digest: 8f2ef50a2347fa58a9da00f2cb28ad5de41d0b8ddbaf4ef77309bfc614ce9450
     name: kimball-api
@@ -56,7 +65,7 @@ entries:
     - https://getkimball.github.io/charts/stable/kimball-api-0.1.7.tgz
     version: 0.1.7
   - apiVersion: v2
-    created: "2020-09-08T09:19:48.730056-04:00"
+    created: "2020-09-09T10:33:45.061147-04:00"
     description: Kimball API
     digest: ece598dc30a2035f20c73831d61a4df13573a1605d83ed390efb77537e47291d
     name: kimball-api
@@ -65,7 +74,7 @@ entries:
     - https://getkimball.github.io/charts/stable/kimball-api-0.1.6.tgz
     version: 0.1.6
   - apiVersion: v2
-    created: "2020-09-08T09:19:48.729455-04:00"
+    created: "2020-09-09T10:33:45.060777-04:00"
     description: Kimball API
     digest: 358c28fe26303fcfe0a43b73b3ae0ee9c1d30df92c08a8490e7345600fa1443e
     name: kimball-api
@@ -74,7 +83,7 @@ entries:
     - https://getkimball.github.io/charts/stable/kimball-api-0.1.5.tgz
     version: 0.1.5
   - apiVersion: v2
-    created: "2020-09-08T09:19:48.728885-04:00"
+    created: "2020-09-09T10:33:45.060384-04:00"
     description: Kimball API
     digest: eb3a1013d23a3f7b61d074fed72989b26df93c74804d74d30860d74519ceba96
     name: kimball-api
@@ -83,7 +92,7 @@ entries:
     - https://getkimball.github.io/charts/stable/kimball-api-0.1.4.tgz
     version: 0.1.4
   - apiVersion: v2
-    created: "2020-09-08T09:19:48.728383-04:00"
+    created: "2020-09-09T10:33:45.059985-04:00"
     description: Kimball API
     digest: 29b74a15983936fb35026d9a6e01958cd5f3bacd1f9c9d86a94a931cd4bf3f06
     name: kimball-api
@@ -92,7 +101,7 @@ entries:
     - https://getkimball.github.io/charts/stable/kimball-api-0.1.3.tgz
     version: 0.1.3
   - apiVersion: v2
-    created: "2020-09-08T09:19:48.727863-04:00"
+    created: "2020-09-09T10:33:45.059607-04:00"
     description: Kimball API
     digest: 1d9e029811703187e1ae32923b69a59fe8b22fff7bac61f719d961ce27b79667
     name: kimball-api
@@ -101,7 +110,7 @@ entries:
     - https://getkimball.github.io/charts/stable/kimball-api-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
-    created: "2020-09-08T09:19:48.725629-04:00"
+    created: "2020-09-09T10:33:45.057589-04:00"
     description: Kimball API
     digest: 5176fc74d7db373d243f54f6442ff7b0d2c8d93b9969d254fdd5919474ef4080
     name: kimball-api
@@ -110,7 +119,7 @@ entries:
     - https://getkimball.github.io/charts/stable/kimball-api-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
-    created: "2020-09-08T09:19:48.724897-04:00"
+    created: "2020-09-09T10:33:45.056926-04:00"
     description: A Helm chart for Kubernetes
     digest: dbdb49338525c87f35efdccf26ee882041f445dff8ef5d75879faf06f893eaf8
     name: kimball-api
@@ -118,4 +127,4 @@ entries:
     urls:
     - https://getkimball.github.io/charts/stable/kimball-api-0.1.0.tgz
     version: 0.1.0
-generated: "2020-09-08T09:19:48.723898-04:00"
+generated: "2020-09-09T10:33:45.056205-04:00"
