@@ -60,6 +60,10 @@ tolerations: []
 affinity: {}
 
 kimball:
+  # Complex app config that is dificult to expose via individual helm options,
+  # see https://github.com/getkimball/docs/ for more info
+  app_config: "[]."
+
   enableDaemonset: true
   daemonsetPort: 7232
 
