@@ -85,15 +85,21 @@ spec:
             value: {{ .Values.kimball.storage_path_prefix }}
           {{- end  }}
 
-          {{- if .Values.kimball.secret.name }}
           volumeMounts:
+          - name: kimball-config
+            mountPath: "/kimball"
+          {{- if .Values.kimball.secret.name }}
           - name: secrets
             mountPath: "/secrets"
             readOnly: true
           {{- end  }}
 
-      {{- if .Values.kimball.secret.name }}
       volumes:
+      - name: kimball-config
+        configMap:
+          name: kimball-config
+
+      {{- if .Values.kimball.secret.name }}
       - name: secrets
         secret:
           secretName: {{ .Values.kimball.secret.name }}
