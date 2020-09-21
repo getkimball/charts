@@ -59,6 +59,11 @@ spec:
           {{- end }}
           - name: ANALYTICS_HOST
             value: {{ include "kimball-api.fullname" . }}
+          - name: KUBERNETES_MEMORY_LIMIT
+            valueFrom:
+              resourceFieldRef:
+                containerName: {{ .Chart.Name }}
+                resource: limits.memory
           - name: FEATURES_MODE
             value: sidecar
           - name: LOG_LEVEL
