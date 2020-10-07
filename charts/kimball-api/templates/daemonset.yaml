@@ -64,6 +64,10 @@ spec:
               resourceFieldRef:
                 containerName: {{ .Chart.Name }}
                 resource: limits.memory
+          - name: KUBERNETES_POD_NAME
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.name
           - name: FEATURES_MODE
             value: sidecar
           - name: LOG_LEVEL
