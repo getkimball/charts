@@ -48,6 +48,7 @@ Selector labels
 */}}
 {{- define "kimball-api.genericSelectorLabels" -}}
 app.kubernetes.io/component: api
+app.kubernetes.io/name: {{ include "kimball-api.name" . }}
 {{- end -}}
 
 {{- define "kimball-api.APISelectorLabels" -}}
