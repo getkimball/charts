@@ -64,7 +64,7 @@ kimball:
   # see https://github.com/getkimball/docs/ for more info
   app_config: "[]."
 
-  enableDaemonset: true
+  enableDaemonset: false
   daemonsetPort: 7232
 
   # A Sentry DSN for error collection.
